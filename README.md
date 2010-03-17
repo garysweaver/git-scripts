@@ -3,7 +3,7 @@ git-scripts
 
 Some scripts to use with Git that I use that might be handy for others. Please understand what they do before using them and use them at your own risk.
 
-See the [original post about gbranch.sh][pst].
+([original post about gbranch.sh][pst])
 
 ### Setup
 
