@@ -3,6 +3,8 @@ git-scripts
 
 Some scripts to use with Git that I use that might be handy for others. Please understand what they do before using them and use them at your own risk.
 
+More info and attributions in the [original post][pst].
+
 ### Setup
 
     cd ~
@@ -32,3 +34,4 @@ Copyright (c) 2010 Gary S. Weaver, released under the [MIT license][lic].
 
 
 [lic]: http://github.com/garysweaver/git-scripts/blob/master/LICENSE
+[pst]: http://stufftohelpyouout.blogspot.com/2010/03/git-branching-with-remote-tracking-made.html
