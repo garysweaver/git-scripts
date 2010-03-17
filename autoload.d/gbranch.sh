@@ -37,6 +37,6 @@ function gbranch () {
       fi
     fi
   else
-    echo usage: gbranch \(jira_ticket\)
+    echo usage: gbranch \(branch_name\)
   fi
 }
