@@ -22,10 +22,13 @@ Restart Terminal.app or whatever, and then test by doing:
 
 Example:
 
-   gbranch (some_branch_name)
+    gbranch (some_branch_name)
 
 See each script to see what it does.
 
 ### License
 
-Copyright (c) 2010 Gary S. Weaver, released under the {MIT license}[http://github.com/garysweaver/git-scripts/blob/master/LICENSE].
+Copyright (c) 2010 Gary S. Weaver, released under the [MIT license][lic].
+
+
+[lic]: http://github.com/garysweaver/git-scripts/blob/master/LICENSE
