@@ -44,8 +44,8 @@ function gbranch () {
         fi
       fi
     fi
-  elif
-  then if test $# -eq 2
+  elif test $# -eq 2
+  then
     rbrch=`git branch -r`
     if [ "$?" -eq "0" ]
     then
