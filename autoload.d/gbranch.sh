@@ -80,6 +80,7 @@ function gbranch () {
         echo
         echo "usage: gbranch (branch_name) [optional_remote_branch_name_to_branch_from_if_not_master]"
       fi
+    fi
   else
     echo "usage: gbranch (branch_name) [optional_remote_branch_name_to_branch_from_if_not_master]"
   fi
