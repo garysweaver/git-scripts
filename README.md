@@ -22,11 +22,28 @@ Restart Terminal.app or whatever, and then test by doing:
 
 ### Usage
 
-Example:
-
-    gbranch (some_branch_name)
-
 Read each script and understand what it does.
+
+#### gbranch
+
+The following tracks a remote branch if it already exists, or makes a remotely tracking git branch if one doesn't exist, or just switches to the local branch by that name:
+
+    gbranch (branch_name)
+
+The following tracks a remote branch if it already exists, or branches from the specified remote branch to make a remotely tracking git branch from it if the (new) branch_name doesn't exist, or just switches to the local (new) branch_name by that name:
+
+    gbranch (some_branch_name) (existing_remote_branch_to_branch_from)
+
+#### Aliases
+
+gpull and gpush make it easier to push/pull to the current branch, provided by Cody Caughlan in reply to [this stackoverflow thread][stov]:
+
+    gpull
+    gpush    
+
+gmf is just an alias to generate a merge commit even if the merge resolved as a fast-forward (someone on our team came up with this alias, and even though it isn't clear, it is short and I remember it):
+
+    gmf (branch_name_to_merge_into_current_branch)
 
 ### License
 
@@ -35,3 +52,4 @@ Copyright (c) 2010 Gary S. Weaver, released under the [MIT license][lic].
 
 [lic]: http://github.com/garysweaver/git-scripts/blob/master/LICENSE
 [pst]: http://stufftohelpyouout.blogspot.com/2010/03/git-branching-with-remote-tracking-made.html
+[stov]: http://stackoverflow.com/questions/948354/git-push-current-branch
