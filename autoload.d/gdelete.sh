@@ -4,7 +4,7 @@
 #
 # Release: 2010-09-07
 # gdelete (branch_name) removes a remote branch if it already exists, and
-# removes the local branch.
+# removes the local branch with same name.
 
 function gdelete () {
   branch=$1
