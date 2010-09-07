@@ -34,6 +34,12 @@ The following tracks a remote branch if it already exists, or branches from the 
 
     gbranch (some_branch_name) (existing_remote_branch_to_branch_from)
 
+#### gdelete
+
+The following removes remote and local branches with the specified name:
+
+    gdelete (branch_name)
+
 #### Aliases
 
 gpull and gpush make it easier to push/pull to the current branch, provided by Cody Caughlan in reply to [this stackoverflow thread][stov]:
