@@ -10,14 +10,23 @@ function gdelete () {
   branch=$1
   if test $# -eq 1
   then
+    echo "Delete in local, remote, or both?"
+    read answer
     rbrch=`git branch -r`
     if [ "$?" -eq "0" ]
     then
       if [[ "$rbrch" =~ "origin/$branch" ]]
       then
-        git push origin ":$branch"
+        if [[ "$answer" == "both" || "$answer" == "remote" ]]; then
+          echo "Deleting remote branch: $branch"
+          git push origin ":$branch"
+        fi
       fi
-      git branch -d "$branch"
+
+      if [[ "$answer" == "both" || "$answer" == "local" ]]; then
+        echo "Deleting local branch: $branch"
+        git branch -d "$branch"
+      fi
     fi
   else
     echo "usage: gdelete (branch_name)"
