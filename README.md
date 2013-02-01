@@ -36,9 +36,11 @@ The following tracks a remote branch if it already exists, or branches from the 
 
 #### gdelete
 
-The following removes remote and local branches with the specified name:
+The following removes either local, remote, or both local and remote branches with the specified name:
 
     gdelete (branch_name)
+
+It used to be a quiet delete of both, but that may result in an accidentally deletion. It now prompts whether you want to delete local, remote, or both, and if you respond with something other than that, it won't delete.
 
 #### Aliases
 
@@ -50,6 +52,10 @@ gpull and gpush make it easier to push/pull to the current branch, provided by C
 gmf is just an alias to generate a merge commit even if the merge resolved as a fast-forward (someone on our team came up with this alias, and even though it isn't clear, it is short and I remember it):
 
     gmf (branch_name_to_merge_into_current_branch)
+
+### Updating
+
+If you get the latest, be sure to either `source ~/git-scripts/git-scripts.sh` or close/reopen all terminal sessions.
 
 ### License
 
