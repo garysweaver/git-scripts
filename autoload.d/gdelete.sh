@@ -2,7 +2,10 @@
 #
 # Written by Gary S. Weaver
 #
-# Release: 2010-09-07
+# Release: 2013-02-01 - forcing confirmation of which branch to delete.
+# Release: 2010-09-07 - initial release. removes a remote branch if it already exists, and
+# removes the local branch with same name.
+#
 # gdelete (branch_name) removes a remote branch if it already exists, and
 # removes the local branch with same name.
 
