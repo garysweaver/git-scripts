@@ -23,6 +23,7 @@ function gdelete () {
         if [[ "$answer" == "both" || "$answer" == "remote" ]]; then
           echo "Deleting remote branch: $branch"
           git push origin ":$branch"
+          echo "If you are still seeing remote branches, you might want to: git fetch -p"
         fi
       fi
 
